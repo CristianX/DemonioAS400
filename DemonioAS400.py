@@ -70,6 +70,9 @@ content = str.replace(content, "v_recaud", valorRecaudado)
 
 # Moviendo .FAC a Respaldos
 shutil.move(ifExistFAC[0], "E:/Demonio_AS400/SMM/Respaldos")
+# Limpiando arrays
+ifExistFAC.clear()
+lineas.clear()
 
 # ***********************Impresora*************************
 def updateZip(zipname, filename, data):
